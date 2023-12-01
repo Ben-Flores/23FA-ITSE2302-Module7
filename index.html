@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>USB - Order Shirts</title>
+    <meta name="charset" content="utf-8" />
+    <meta
+      name="description"
+      content="A website for placing custom shirt orders from USB"
+    />
+    <meta name="keywords" content="ultimate, shirt, barons, purchase, order" />
+    <meta name="author" content="Benjamin Flores" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ultimate Shirt Barons</h1>
+      <h3>Order Online</h3>
+      <nav>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Design Showcase</a></li>
+          <li><a href="index.html">Design-Your-Own</a></li>
+          <li><a href="manipulatingDOM.html">Humanitarian Work</a></li>
+          <li><a>Order Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div id="personalInfo">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name (Required):</label><br />
+            <input type="text" id="fname" name="fname" size="45" /><br />
+            <label for="lname">Last Name (Required):</label><br />
+            <input type="text" id="lname" name="lname" size="45" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" size="45" /><br />
+            <label for="comments">Additional Comments:</label><br />
+            <textarea
+              id="comments"
+              name="comments"
+              cols="44"
+              rows="5"
+            ></textarea>
+          </fieldset>
+        </div>
+        <div id="cart">
+          <fieldset id="cartFS">
+            <legend>Select Items to Purchase (Required):</legend>
+            <input
+              type="checkbox"
+              id="smallShirt"
+              name="smallShirt"
+              value="17.99"
+            />
+            <label for="smallShirt"
+              >Customized T-Shirt - Small<br />Price: $17.99</label
+            ><br />
+            <input
+              type="checkbox"
+              id="mediumShirt"
+              name="mediumShirt"
+              value="19.99"
+            />
+            <label for="mediumShirt"
+              >Customized T-Shirt - Medium<br />Price: $19.99</label
+            ><br />
+            <input
+              type="checkbox"
+              id="largeShirt"
+              name="largeShirt"
+              value="20.99"
+            />
+            <label for="largeShirt"
+              >Customized T-Shirt - Large<br />Price: $20.99</label
+            ><br />
+            <input
+              type="checkbox"
+              id="hoodie"
+              name="hoodie"
+              value="23.99"
+            />
+            <label for="hoodie"
+              >Customized Hoodie - Large<br />Price: $23.99</label
+            ><br />
+          </fieldset>
+          <div id="images">
+            <img
+              src="images/shirtIconSmall.png"
+              alt="Shirt Icon"
+              width="300"
+              height="300"
+            />
+            <img
+              src="images/hoodieLogoSmall.png"
+              alt="Hoodie Icon"
+              width="300"
+              height="300"
+            />
+          </div>
+        </div>
+        <div id="shipping">
+          <fieldset id="shippingFS">
+            <legend>Choose your Shipping:</legend>
+            <input
+              type="radio"
+              id="expressShipping"
+              name="shipping"
+              value="8.99"
+              checked
+            />
+            <label for="shipping"
+              >Express 2-Business-Day Shipping and Handling (+$8.99)</label
+            ><br />
+            <input
+              type="radio"
+              id="fastShipping"
+              name="shipping"
+              value="2.99"
+            />
+            <label for="pickup">Fast Shipping (+$2.99)</label><br />
+            <label for="region">Select your region:</label><br />
+            <select id="region" name="region">
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="NM">New Mexico</option>
+              <option value="TX">Texas</option>
+            </select>
+          </fieldset>
+        </div>
+        <input type="reset" id="reset" value="Reset" />
+        <input type="submit" id="submit" value="Submit" />
+        <div id="receipt">
+          <h2>Receipt:</h2>
+          <p id="receiptBody"></p>
+          <p>Thanks for shopping with us!</p>
+          <button type="button" id="closeReceiptButton">Close</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy; 2022-2023
+        <a href="mailto:benjaminflores111255@gmail.com">Ultimate Shirt Barons</a
+        >. All rights reserved. | (832) 234-7375
+      </p>
+    </footer>
+  </body>
+</html>
