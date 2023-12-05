@@ -1,3 +1,4 @@
+/* global styles */
 body{
     background-color: #FFE3E3;
     line-height: 2;
@@ -6,14 +7,17 @@ body{
     padding: 0;
     margin: 0;
 }
+/* headings/nav links */
 h1, h3, h4, h5, h6, nav a{
     font-family: 'Noto Serif', Times
 }
+/* other links */
 a{
     text-decoration: none;
     color: #00e8fc;
 }
 
+/* header bg, text color, alignment */
 header{
     background-color: #545863;
     text-align: center;
@@ -21,9 +25,11 @@ header{
     margin: 0;
     padding: 10px;
 }
+/* collapsing page subtitle margin */
 header h1, header h3, ul{
     margin: 0;
 }
+/* making nav orientation horizontal */
 nav ul{
     display: flex;
     list-style-type: none;
@@ -31,6 +37,7 @@ nav ul{
     padding: 0;
     margin: 15px;
 }
+/* adding space between nav links */
 nav li{
     padding: 10px 20px;
 }
@@ -41,18 +48,22 @@ nav a{
     font-size:  larger;
 }
 
+/* main styles */
 form{
     padding: 20px;
 }
+/* fieldset border removed */
 fieldset{
     margin: 10px;
     border: none;
 }
+/* formatting fieldset legend text */
 legend{
     font-size: 24px;
     font-weight: bold;
     padding-top: 10px;
 }
+/* divs holding fieldsets are assigned bg colors and margin */
 #personalInfo{
     border-radius: 10px;
     background-color: #F96E46;
@@ -68,6 +79,7 @@ legend{
     padding: 10px;
     border-radius: 20px;
 }
+/* aligning images div */
 #images{
     margin-left: auto;
     align-self: center;
@@ -77,6 +89,7 @@ legend{
     background-color: #4DA1A9;
     margin-bottom: 20px;
 }
+/* making input fields larger */
 input{
     height: 30px;
     font-size: 18px;
@@ -95,11 +108,13 @@ select{
     height: 30px;
     font-size: 18px;
 }
+/* making buttons larger */
 #reset, #submit, button{
     width: 100px;
     height: 50px;
     font-size: 24px;
 }
+/* formatting and hiding receipt div */
 #receipt{
     display: none;
     padding: 10px 25px;
@@ -111,7 +126,7 @@ h2{
     margin: 0;
 }
 
-
+/* footer styles */
 footer{
     background-color: #545863;
     margin: 0;
