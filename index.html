@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<!-- setting language -->
 <html lang="en">
   <head>
+    <!-- page title -->
     <title>USB - Order Shirts</title>
+    <!-- meta tags for charset, keywords, description, and viewport -->
     <meta name="charset" content="utf-8" />
     <meta
       name="description"
@@ -10,14 +13,17 @@
     <meta name="keywords" content="ultimate, shirt, barons, purchase, order" />
     <meta name="author" content="Benjamin Flores" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking stylesheet and js script -->
     <link rel="stylesheet" href="css/styles.css" />
     <script src="scripts/validateInput.js" defer></script>
   </head>
   <body>
+    <!-- title and placeholder nav -->
     <header>
       <h1>Ultimate Shirt Barons</h1>
       <h3>Order Online</h3>
       <nav>
+        <!-- anchor elements present but do not point to any pages currently -->
         <ul>
           <li><a>Home</a></li>
           <li><a>Design Showcase</a></li>
@@ -27,9 +33,13 @@
         </ul>
       </nav>
     </header>
+    <!-- main holds the form for orders -->
     <main>
+      <!-- most elements in the form are labeled with ids for easy access in js processing -->
       <form id="form">
+        <!-- using divs to surround the fieldsets provides more styling options -->
         <div id="personalInfo">
+          <!-- fieldset for personal information fields -->
           <fieldset>
             <legend>Personal Information</legend>
             <label for="fname">First Name (Required):</label><br />
@@ -48,6 +58,7 @@
           </fieldset>
         </div>
         <div id="cart">
+          <!-- fieldset for items that can be purchased -->
           <fieldset id="cartFS">
             <legend>Select Items to Purchase (Required):</legend>
             <input
@@ -82,6 +93,7 @@
               >Customized Hoodie - Large<br />Price: $23.99</label
             ><br />
           </fieldset>
+          <!-- this div holds two images and allows for easier formatting/alignment for both within the parent div -->
           <div id="images">
             <img
               src="images/shirtIconSmall.png"
@@ -98,16 +110,18 @@
           </div>
         </div>
         <div id="shipping">
+          <!-- fieldset for shipping options -->
           <fieldset id="shippingFS">
             <legend>Choose your Shipping (Required):</legend>
+            <!-- the checked attribute helps us not have to verify if a button was selected -->
             <input
               type="radio"
               id="expressShipping"
               name="shipping"
               value="8.99"
-              checked
+              checked  
             />
-            <label for="shipping"
+            <label for="expressShipping"
               >Express 2-Business-Day Shipping and Handling (+$8.99)</label
             ><br />
             <input
@@ -116,7 +130,7 @@
               name="shipping"
               value="2.99"
             />
-            <label for="pickup">Fast Shipping (+$2.99)</label><br />
+            <label for="fastShipping">Fast Shipping (+$2.99)</label><br />
             <label for="region">Select your region:</label><br />
             <select id="region" name="region">
               <option value="CA">California</option>
@@ -126,8 +140,10 @@
             </select>
           </fieldset>
         </div>
+        <!-- reset and submit buttons -->
         <input type="reset" id="reset" value="Reset" />
         <input type="submit" id="submit" value="Submit" />
+        <!-- this div is hidden/shown and is edited in the js script to show the user the placed order -->
         <div id="receipt">
           <h2>Receipt:</h2>
           <p id="receiptBody"></p>
@@ -136,6 +152,7 @@
         </div>
       </form>
     </main>
+    <!-- footer contains contact information and copyright details -->
     <footer>
       <p>
         &copy; 2022-2023
